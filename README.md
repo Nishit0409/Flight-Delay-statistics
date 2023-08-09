@@ -1,40 +1,26 @@
 # Flight-Delay-statistics
 The dataset contains observations of US domestic flights in 2013, and consists of the following fields:
-
-Year: The year of the flight (all records are from 2013)
-Month: The month of the flight
-DayofMonth: The day of the month on which the flight departed
-DayOfWeek: The day of the week on which the flight departed - from 1 (Monday) to 7 (Sunday)
-Carrier: The two-letter abbreviation for the airline.
-OriginAirportID: A unique numeric identifier for the departure aiport
-OriginAirportName: The full name of the departure airport
-OriginCity: The departure airport city
-OriginState: The departure airport state
-DestAirportID: A unique numeric identifier for the destination aiport
-DestAirportName: The full name of the destination airport
-DestCity: The destination airport city
-DestState: The destination airport state
-CRSDepTime: The scheduled departure time
-DepDelay: The number of minutes departure was delayed (flight that left ahead of schedule have a negative value)
-DelDelay15: A binary indicator that departure was delayed by more than 15 minutes (and therefore considered "late")
-CRSArrTime: The scheduled arrival time
-ArrDelay: The number of minutes arrival was delayed (flight that arrived ahead of schedule have a negative value)
-ArrDelay15: A binary indicator that arrival was delayed by more than 15 minutes (and therefore considered "late")
-Cancelled: A binary indicator that the flight was cancelled
-
 This project centers on uncovering insights from flight data to identify factors that contribute to delays in departure and arrival. The goal is to provide a comprehensive analysis of potential causes behind these delays for improved operational understanding and decision-making within the aviation industry.
 
-1. Starting by cleaning the data.
-    - Identify any null or missing data, and impute appropriate replacement values.
-    - Identify and eliminate any outliers in the **DepDelay** and **ArrDelay** columns.
-2. Explore the cleaned data.
-    - View summary statistics for the numeric fields in the dataset.
-    - Determine the distribution of the **DepDelay** and **ArrDelay** columns.
-    - Use statistics, aggregate functions, and visualizations to answer the following questions:
-        - *What are the average (mean) departure and arrival delays?*
-        - *How do the carriers compare in terms of arrival delay performance?*
-        - *Are some days of the week more prone to arrival days than others?*
-        - *Which departure airport has the highest average departure delay?*
-        - *Do **late** departures tend to result in longer arrival delays than on-time departures?*
-        - *Which route (from origin airport to destination airport) has the most **late** arrivals?*
-        - *Which route has the highest average arrival delay?*
+Key Steps:
+
+Data Cleaning:
+
+Detect and address null or missing data points by imputing relevant values.
+Mitigate data anomalies by identifying and removing outliers within the DepDelay and ArrDelay columns.
+Exploratory Analysis:
+
+Examine summary statistics of numerical fields to gain an overview of the dataset's characteristics.
+Investigate the distribution of departure and arrival delays through visualizations and summary metrics.
+Analytical Insights:
+
+Calculate average departure and arrival delays to quantify typical delays.
+Compare carriers' arrival delay performance to identify variations.
+Assess days of the week for trends in arrival delays.
+Determine the departure airport with the highest average delay.
+Analyze the correlation between late departures and subsequent arrival delays.
+Pinpoint routes with the most instances of late arrivals.
+Identify routes with the highest average arrival delays.
+Project Impact:
+
+By delving into these analyses, the project aims to shed light on critical aspects affecting flight delays, including airline performance, departure times, and route characteristics. The findings will enable aviation professionals to make data-informed decisions for enhancing operational efficiency, resource allocation, and passenger experiences. Ultimately, this project contributes to a deeper understanding of the intricacies of flight delays and supports efforts to mitigate their impact on airline operations and customer satisfaction.
